@@ -116,11 +116,11 @@ void App::init()
 
 	tailScale = sf::Vector2f(2.f, 1.2f);
 
-	head1.loadFromFile("files/dragonHead1.png");
-	head2.loadFromFile("files/dragonHead2.png");
-	head3.loadFromFile("files/dragonHead3.png");
-	head22.loadFromFile("files/dragonHead22.png");
-	head32.loadFromFile("files/dragonHead32.png");
+	head1.loadFromFile("../../src/files/dragonHead1.png");
+	head2.loadFromFile("../../src/files/dragonHead2.png");
+	head3.loadFromFile("../../src/files/dragonHead3.png");
+	head22.loadFromFile("../../src/files/dragonHead22.png");
+	head32.loadFromFile("../../src/files/dragonHead32.png");
 
 	// Head case
 	{
@@ -132,21 +132,21 @@ void App::init()
 		totalLinks++;
 	}
 
-	tail1.loadFromFile("files/tail1.png");
-	tail2.loadFromFile("files/tail2.png");
-	tail3.loadFromFile("files/tail3.png");
-	tail22.loadFromFile("files/tail22.png");
-	tail32.loadFromFile("files/tail32.png");
+	tail1.loadFromFile("../../src/files/tail1.png");
+	tail2.loadFromFile("../../src/files/tail2.png");
+	tail3.loadFromFile("../../src/files/tail3.png");
+	tail22.loadFromFile("../../src/files/tail22.png");
+	tail32.loadFromFile("../../src/files/tail32.png");
 
-	bodySegment1.loadFromFile("files/bodySegment1.png");
-	bodySegment2.loadFromFile("files/bodySegment2.png");
-	bodySegment3.loadFromFile("files/bodySegment3.png");
-	bodySegment22.loadFromFile("files/bodySegment22.png");
-	bodySegment32.loadFromFile("files/bodySegment32.png");
+	bodySegment1.loadFromFile("../../src/files/bodySegment1.png");
+	bodySegment2.loadFromFile("../../src/files/bodySegment2.png");
+	bodySegment3.loadFromFile("../../src/files/bodySegment3.png");
+	bodySegment22.loadFromFile("../../src/files/bodySegment22.png");
+	bodySegment32.loadFromFile("../../src/files/bodySegment32.png");
 
 	spawnLinks();
 
-	backgroundTexture.loadFromFile("files/skyPattern3.jpg");
+	backgroundTexture.loadFromFile("../../src/files/skyPattern3.jpg");
 	backgroundTexture.setRepeated(true);
 	background.setTexture(&backgroundTexture);
 
@@ -154,18 +154,18 @@ void App::init()
 	background.setSize(sf::Vector2f(backgroundSize.x, backgroundSize.y));
 	background.setTextureRect(sf::IntRect(0, 0, backgroundSize.x, backgroundSize.y));
 
-	cursorImage.loadFromFile("files/cursor.png");
+	cursorImage.loadFromFile("../../src/files/cursor.png");
 	cursor.loadFromPixels(cursorImage.getPixelsPtr(), cursorImage.getSize(), sf::Vector2u(0, 0));
 	window->setMouseCursor(cursor);
 	cursorArrowTexture.loadFromImage(cursorImage);
 	cursorArrow.setTexture(&cursorArrowTexture);
 	cursorArrow.setSize(sf::Vector2f(32.f, 32.f));
 
-	paws1.loadFromFile("files/paws1.png");
-	paws2.loadFromFile("files/paws2.png");
-	paws3.loadFromFile("files/paws3.png");
-	paws22.loadFromFile("files/paws22.png");
-	paws32.loadFromFile("files/paws32.png");
+	paws1.loadFromFile("../../src/files/paws1.png");
+	paws2.loadFromFile("../../src/files/paws2.png");
+	paws3.loadFromFile("../../src/files/paws3.png");
+	paws22.loadFromFile("../../src/files/paws22.png");
+	paws32.loadFromFile("../../src/files/paws32.png");
 
 	paws.setTexture(&paws1);
 	paws.setSize(sf::Vector2f(size, size * 1.3f * 2));
